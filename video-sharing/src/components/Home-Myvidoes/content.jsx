@@ -10,7 +10,7 @@ const Content = () => {
     const [videoData, setVideoData] = useState([]);
 
     useEffect(() => {
-        axios.get("https://video-sharing-platform.onrender.com/home")
+        axios.get("https://videosharing-balaji.onrender.com/home")
             .then((res) => {
                 setData(res.data)
                 setVideoData(res.data)

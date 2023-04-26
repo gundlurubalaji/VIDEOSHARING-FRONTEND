@@ -29,7 +29,7 @@ function Navbar() {
 
    const handleSignout=async ()=>{
     const newToken=localStorage.getItem("mytoken")
-    axios.post("https://video-sharing-platform.onrender.com/logout",{newToken})
+    axios.post("https://videosharing-balaji.onrender.com/logout",{newToken})
         .then((res)=>{
           if(res.status==200){
             window.alert("logout successful")
