@@ -12,7 +12,7 @@ function Myvideos() {
     const [card,setCard] = useState("")
     useEffect(() => {
         const newToken = localStorage.getItem("mytoken")
-        axios.post("https://video-sharing-platform.onrender.com/myvideos",{newToken})
+        axios.post("https://videosharing-balaji.onrender.com/myvideos",{newToken})
             .then((res) => {
                 setData(res.data)
             }).catch((err) => {

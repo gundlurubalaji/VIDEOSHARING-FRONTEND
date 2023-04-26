@@ -62,7 +62,7 @@ const Upload = ({ setOpen }) => {
 
         const newToken = localStorage.getItem("mytoken")
 
-        axios.post("https://video-sharing-platform.onrender.com/upload",{...inputs,newToken})
+        axios.post("https://videosharing-balaji.onrender.com/upload",{...inputs,newToken})
         .then((res)=>{
             window.alert("video uploaded sucesfully")
             setOpen(false)
