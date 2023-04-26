@@ -11,7 +11,7 @@ const Search = ()=>{
     const [allVidoesData, setAllVideosData] = useState([]);
 
     useEffect(() => {
-        axios.get("https://video-sharing-platform.onrender.com/home")
+        axios.get("https://videosharing-balaji.onrender.com/home")
             .then((res) => {
                 setAllVideosData(res.data)
             }).catch((err) => {
@@ -21,7 +21,7 @@ const Search = ()=>{
     }, []);
 
     useEffect(() => {
-        axios.get(`https://video-sharing-platform.onrender.com/search${query}`)
+        axios.get(`https://videosharing-balaji.onrender.com/search${query}`)
             .then((res) => {
                 setVideos(res.data)
             }).catch((err) => {
